@@ -322,7 +322,7 @@ a:hover { text-decoration: underline; }
   margin-bottom: 2rem;
   flex-wrap: wrap;
 }
-.host-trust__stats { display: flex; gap: 0; flex-shrink: 0; flex-wrap: wrap; }
+.host-trust__stats { display: flex; gap: 0; }
 .host-trust__stat {
   text-align: center;
   padding: 0 1.6rem;
@@ -331,7 +331,7 @@ a:hover { text-decoration: underline; }
 .host-trust__stat:first-child { border-left: 0; padding-left: 0; }
 .host-trust__num { font-family: var(--serif); font-size: 2rem; display: block; line-height: 1; }
 .host-trust__label { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.72; margin-top: 0.4rem; display: block; }
-.host-trust__copy { flex: 1; min-width: 220px; font-size: 0.93rem; opacity: 0.88; margin: 0; }
+.host-trust__copy { flex: 1; min-width: 0; font-size: 0.93rem; opacity: 0.88; margin: 0; }
 
 /* ---------- FAQ accordion (native details) ---------- */
 .faq { border-top: 1px solid var(--line); }
@@ -371,8 +371,10 @@ a:hover { text-decoration: underline; }
   .nav.is-open { transform: none; }
   .nav a:not(.btn) { color: var(--ink) !important; font-size: 1.05rem; }
   .nav-toggle { display: block; z-index: 201; }
-  .host-trust { gap: 1.6rem; padding: 1.4rem 1.6rem; }
-  .host-trust__stat { padding: 0 1rem; }
+  .host-trust { flex-direction: column; align-items: stretch; gap: 1rem; padding: 1.4rem 1.6rem; }
+  .host-trust__stats { justify-content: space-between; }
+  .host-trust__stat { flex: 1; padding: 0 0.5rem; }
+  .host-trust__num { font-size: 1.6rem; }
   .split, .location { grid-template-columns: 1fr; }
   .split--reverse .split__media { order: 0; }
   .booking-cards { grid-template-columns: 1fr; }
