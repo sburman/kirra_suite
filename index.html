@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Kirra Suite | Beachfront Apartment, Kirra · Gold Coast</title>
-  <meta name="description" content="The Kirra Suite is a designer 2-bedroom apartment on Level 8 of a beachfront building in Kirra. Ocean views, resort pool and gym, steps from Kirra Beach and Coolangatta. Book direct for the best rate." />
+  <title>The Kirra Suite | Beachfront Holiday Apartment in Kirra, Gold Coast</title>
+  <meta name="description" content="Book The Kirra Suite, a designer 2-bedroom beachfront holiday apartment in Kirra on the Gold Coast. Ocean views, resort pool and gym, sleeps 4, steps from Kirra Beach. Book direct and save." />
   <meta name="theme-color" content="#1a3a3a" />
   <link rel="canonical" href="https://kirrasuite.com/" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <link rel="preload" as="image" href="assets/img/gallery/balcony-ocean-lg.webp" type="image/webp" fetchpriority="high" />
 
   <!-- Favicons -->
   <link rel="icon" href="favicon.ico" sizes="any" />
@@ -17,14 +19,19 @@
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="The Kirra Suite" />
+  <meta property="og:locale" content="en_AU" />
   <meta property="og:url" content="https://kirrasuite.com/" />
-  <meta property="og:title" content="The Kirra Suite | Beachfront Apartment, Kirra · Gold Coast" />
-  <meta property="og:description" content="Designer 2-bedroom apartment with ocean views, resort pool and gym, steps from Kirra Beach. Book direct for the best rate." />
+  <meta property="og:title" content="The Kirra Suite | Beachfront Holiday Apartment in Kirra, Gold Coast" />
+  <meta property="og:description" content="Designer 2-bedroom beachfront holiday apartment in Kirra, Gold Coast. Ocean views, resort pool and gym, sleeps 4. Book direct and save." />
   <meta property="og:image" content="https://kirrasuite.com/assets/img/gallery/balcony-ocean-lg.jpg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="1067" />
+  <meta property="og:image:alt" content="Ocean views from the private balcony of The Kirra Suite" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="The Kirra Suite | Beachfront Apartment, Kirra · Gold Coast" />
-  <meta name="twitter:description" content="Designer 2-bedroom apartment with ocean views, resort pool and gym, steps from Kirra Beach. Book direct for the best rate." />
+  <meta name="twitter:title" content="The Kirra Suite | Beachfront Holiday Apartment in Kirra, Gold Coast" />
+  <meta name="twitter:description" content="Designer 2-bedroom beachfront holiday apartment in Kirra, Gold Coast. Ocean views, resort pool and gym, sleeps 4. Book direct and save." />
   <meta name="twitter:image" content="https://kirrasuite.com/assets/img/gallery/balcony-ocean-lg.jpg" />
+  <meta name="twitter:image:alt" content="Ocean views from the private balcony of The Kirra Suite" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,29 +42,56 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Apartment",
-    "name": "The Kirra Suite",
-    "url": "https://kirrasuite.com/",
-    "image": "https://kirrasuite.com/assets/img/gallery/balcony-ocean-lg.jpg",
-    "description": "Designer 2-bedroom apartment on Level 8 of a beachfront building in Kirra, with ocean views, resort pool and gym, steps from Kirra Beach.",
-    "numberOfRooms": 2,
-    "occupancy": { "@type": "QuantitativeValue", "maxValue": 4 },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Marine Parade",
-      "addressLocality": "Kirra",
-      "addressRegion": "QLD",
-      "postalCode": "4225",
-      "addressCountry": "AU"
-    },
-    "geo": { "@type": "GeoCoordinates", "latitude": -28.1655, "longitude": 153.5270 },
-    "hasMap": "https://www.google.com/maps/search/?api=1&query=The+Kirra+Suite+Marine+Parade+Kirra+QLD+4225",
-    "amenityFeature": [
-      { "@type": "LocationFeatureSpecification", "name": "Ocean views", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Resort pool", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Gym", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Free secure parking", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true }
+    "@graph": [
+      {
+        "@type": "Apartment",
+        "@id": "https://kirrasuite.com/#apartment",
+        "name": "The Kirra Suite",
+        "url": "https://kirrasuite.com/",
+        "description": "Designer 2-bedroom beachfront holiday apartment on Level 8 in Kirra, Gold Coast, with ocean views, a resort pool and gym, sleeping up to four guests.",
+        "image": [
+          "https://kirrasuite.com/assets/img/gallery/balcony-ocean-lg.jpg",
+          "https://kirrasuite.com/assets/img/gallery/living-balcony-lg.jpg",
+          "https://kirrasuite.com/assets/img/gallery/aerial-beach-lg.webp"
+        ],
+        "numberOfRooms": 2,
+        "numberOfBedrooms": 2,
+        "numberOfBathroomsTotal": 1,
+        "occupancy": { "@type": "QuantitativeValue", "maxValue": 4, "unitText": "guests" },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Marine Parade",
+          "addressLocality": "Kirra",
+          "addressRegion": "QLD",
+          "postalCode": "4225",
+          "addressCountry": "AU"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": -28.1655, "longitude": 153.5270 },
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=The+Kirra+Suite+Marine+Parade+Kirra+QLD+4225",
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Ocean views", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Private balcony", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Resort swimming pool", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Gym", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Free secure parking", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Fully equipped kitchen", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Washing machine and dryer", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Smart TVs", "value": true }
+        ],
+        "sameAs": [
+          "https://www.airbnb.com.au/rooms/1698490853391319597",
+          "https://www.booking.com/hotel/au/the-kirra-suite-miles-residences-ocean-views.en-gb.html"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://kirrasuite.com/#website",
+        "url": "https://kirrasuite.com/",
+        "name": "The Kirra Suite",
+        "inLanguage": "en-AU",
+        "about": { "@id": "https://kirrasuite.com/#apartment" }
+      }
     ]
   }
   </script>
@@ -94,7 +128,7 @@
       </div>
       <div class="hero__inner container">
         <p class="eyebrow" style="color:#f0d9cb">Beachfront · Kirra Beach</p>
-        <h1>Wake to ocean views, steps from the sand</h1>
+        <h1>Wake to ocean views, steps from Kirra Beach</h1>
         <p class="hero__tag">A designer two-bedroom apartment high above Kirra Beach, with the resort pool and gym downstairs, Australia's iconic north-facing surf across the road, and everything already sorted for an easy coastal escape.</p>
         <div class="hero__cta">
           <a href="#book" class="btn btn--primary">Check availability</a>
@@ -204,6 +238,7 @@
             <li><span>Coolangatta, Snapper Rocks &amp; Rainbow Bay</span><span>Short stroll</span></li>
             <li><span>Gold Coast Airport (OOL)</span><span>~10 min drive</span></li>
           </ul>
+          <p style="margin-top:1.4rem;"><a href="guide.html">Explore the full Kirra &amp; Coolangatta area guide</a> for where to eat, surf and unwind.</p>
         </div>
       </div>
     </section>
@@ -214,7 +249,7 @@
         <div class="section__head reveal" style="max-width:none;text-align:center;margin-inline:auto;">
           <p class="eyebrow">Reserve your stay</p>
           <h2>Book The Kirra Suite</h2>
-          <p style="margin-inline:auto;">Book direct for the best rate, then all that's left is to pack the sunscreen.</p>
+          <p style="margin-inline:auto;">Book direct for the best rate, then all that's left is to pack the sunscreen. First time in Kirra? The <a href="faq.html">FAQ</a> covers check-in, parking and Wi-Fi.</p>
         </div>
         <div class="booking-cards">
           <div class="bcard bcard--featured reveal">
