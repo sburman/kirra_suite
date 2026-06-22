@@ -347,7 +347,7 @@ a:hover { text-decoration: underline; }
 /* ---------- Nav backdrop scrim ---------- */
 #navBackdrop {
   position: fixed; inset: 0;
-  z-index: 199;
+  z-index: 48;
   background: rgba(18, 42, 42, 0.45);
   opacity: 0;
   pointer-events: none;
