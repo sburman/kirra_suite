@@ -1,7 +1,7 @@
 # The Kirra Suite
 
 Promotional brochure site for **The Kirra Suite** — a designer 2-bedroom beachfront
-apartment at Miles, Kirra Point, on the southern Gold Coast (QLD, Australia).
+apartment in Kirra, on the southern Gold Coast (QLD, Australia).
 
 A static site (plain HTML, CSS and vanilla JS — no build step, no dependencies)
 hosted on **GitHub Pages** at the custom domain **https://kirrasuite.com.au**.
