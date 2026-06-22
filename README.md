@@ -1,10 +1,10 @@
 # The Kirra Suite
 
-Promotional brochure site for **The Kirra Suite** — a designer 2-bedroom beachfront
+Promotional brochure site for **The Kirra Suite**, a designer 2-bedroom beachfront
 apartment in Kirra, on the southern Gold Coast (QLD, Australia).
 
-A static site (plain HTML, CSS and vanilla JS — no build step, no dependencies)
-hosted on **GitHub Pages** at the custom domain **https://kirrasuite.com.au**.
+A static site (plain HTML, CSS and vanilla JS, no build step or dependencies)
+hosted on **GitHub Pages** at the custom domain **https://kirrasuite.com**.
 
 ## Structure
 
@@ -24,7 +24,7 @@ tools/optimize_images.py Regenerates assets/img/gallery from the high-res origin
 tools/make_favicon.py    Regenerates the favicon set
 ```
 
-The high-resolution source photos are **not** committed — they live in the
+The high-resolution source photos are **not** committed. They live in the
 non-code project root (`../images/`). Re-run the optimizer after adding or
 changing originals:
 

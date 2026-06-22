@@ -1,4 +1,4 @@
-/* The Kirra Suite — interactivity: mosaic gallery, lightbox, nav, reveals.
+/* The Kirra Suite interactivity: mosaic gallery, lightbox, nav, reveals.
    Runs on every page; the gallery/lightbox block is guarded so the shared
    nav, header and footer logic also work on subpages (guide, faq). */
 (function () {
