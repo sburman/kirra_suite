@@ -2,3 +2,22 @@ User-agent: *
 Allow: /
 
 Sitemap: https://kirrasuite.com/sitemap.xml
+
+# AI crawlers explicitly welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Googlebot
+Allow: /

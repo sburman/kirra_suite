@@ -303,6 +303,7 @@ a:hover { text-decoration: underline; }
 .prose li { margin: 0.4rem 0; }
 .prose a:not(.btn) { font-weight: 600; }
 .prose__cta { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.8rem; }
+.property-lede { font-size: 0.86rem; color: var(--muted); border-left: 3px solid var(--line); padding-left: 1rem; margin-bottom: 1.6rem; line-height: 1.6; }
 
 /* ---------- FAQ accordion (native details) ---------- */
 .faq { border-top: 1px solid var(--line); }

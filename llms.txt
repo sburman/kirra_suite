@@ -1,0 +1,13 @@
+# The Kirra Suite
+
+> Designer 2-bedroom beachfront holiday apartment, Level 8, Marine Parade, Kirra (Coolangatta) QLD 4225, Gold Coast, Australia. Sleeps up to 4 guests. Ocean views over Kirra Beach. Ducted A/C, resort pool, gym, free secure parking. Check-in 3pm, check-out 10am. Pets not permitted. ~10 min from Gold Coast Airport (OOL). Managed by POD Property Management.
+
+## Pages
+
+- [Home](https://kirrasuite.com/): Property overview, photo gallery, amenities, and all booking options
+- [Area Guide](https://kirrasuite.com/guide.html): Local guide to Kirra and Coolangatta — beaches, surf, restaurants, coffee, getting here
+- [FAQ](https://kirrasuite.com/faq.html): Check-in times, policies, parking, pool, families, and how to book direct
+
+## Optional
+
+- [Full property facts](https://kirrasuite.com/llms-full.txt)

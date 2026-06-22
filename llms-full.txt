@@ -1,0 +1,111 @@
+# The Kirra Suite — Full Property Facts
+
+## Identity
+Name: The Kirra Suite
+Type: Holiday apartment / short-stay accommodation
+Address: Level 8, Marine Parade, Kirra (Coolangatta) QLD 4225, Gold Coast, Australia
+Coordinates: -28.1655, 153.5270
+Website: https://kirrasuite.com/
+
+## Property Specifications
+Bedrooms: 2
+Bathrooms: 1
+Maximum guests: 4
+Floor: Level 8
+Master bedroom: King bed
+Second bedroom: Queen sofa bed
+Outlook: North-facing ocean views over Kirra Beach
+
+## Check-in / Check-out
+Check-in: From 3:00 pm (15:00)
+Check-out: By 10:00 am (10:00)
+Early check-in / late check-out: On request, subject to availability
+
+## Policies
+Pets: Not permitted
+Smoking: Not permitted
+Minimum stay: Varies by platform and season — check at time of booking
+Cancellation: Varies by booking channel and rate selected — see terms at checkout
+
+## Amenities — Apartment
+- Ducted air conditioning throughout
+- Private balcony with ocean views over Kirra Beach
+- Fully equipped kitchen: stone island, gas cooktop, coffee machine, oven, microwave
+- Three Google TV Smart televisions (living area + both bedrooms)
+- High-speed Wi-Fi
+- Concealed laundry: washing machine, dryer, drying rack
+- All linen and towels provided
+- Welcome hamper on arrival
+- Private storage cage in secure car park (surfboards, bicycles, e-bikes)
+
+## Amenities — Building
+- Resort-style pool and sun deck
+- Fully equipped gym
+- Beachfront BBQ and entertaining area (bookable on request through host)
+- Secure underground car park — one complimentary space per stay
+- Lift access
+
+## Location — Distances
+- Kirra Beach: directly across the road (~50 m)
+- Kirra Beach Hotel: a few minutes walk
+- Kirra Beach House restaurant: a few minutes walk
+- Made Espresso Bar: a few minutes walk
+- Love Street cafe: short walk
+- Coolangatta, Rainbow Bay, Greenmount Beach: short stroll or 5-min drive
+- Snapper Rocks / Superbank: 5-min drive
+- Point Danger (QLD/NSW border lookout): 5-min drive
+- Gold Coast Airport (OOL): approximately 10 minutes by car
+- Surfers Paradise: approximately 30 minutes by car
+
+## Booking Channels
+Direct (best price, no platform fees): https://podpropertymanagement.com/properties/book/the_kirra_suite
+Airbnb: https://www.airbnb.com.au/rooms/1698490853391319597
+Booking.com: https://www.booking.com/hotel/au/the-kirra-suite-miles-residences-ocean-views.en-gb.html
+
+## Management
+Manager: POD Property Management (local Gold Coast agency)
+Host: Camille — Airbnb Superhost with nine years of five-star hosting experience on the Gold Coast
+
+## Guest Suitability
+- Couples seeking a luxury beachfront escape
+- Families with children (patrolled, family-friendly Kirra Beach directly across the road)
+- Groups of friends (up to 4 guests)
+- Surfers (board storage, Kirra point break and Superbank nearby)
+- Cyclists and e-bike riders (storage, beachfront pathway)
+- Fly-in guests (Gold Coast Airport OOL ~10-min transfer)
+
+## Nearby Highlights
+Full area guide: https://kirrasuite.com/guide.html
+
+Beaches and surf:
+- Kirra Beach: iconic north-facing point break; patrolled swimming; soft sand
+- Snapper Rocks / Superbank: two kilometres of sand-bottom point break through Rainbow Bay, Greenmount and Kirra; WSL event host
+- Rainbow Bay: sheltered swimming beach
+- Point Danger: QLD/NSW border headland with lighthouse and Captain Cook Memorial
+
+Restaurants (Kirra and Coolangatta):
+- Siblings@Kirra: award-winning modern-Australian fine dining
+- Kirra Beach House: Mediterranean grazing, panoramic views, cocktail list
+- Hanks: ocean views, coastal lunch and sunset dinners
+- Pipi's: beachside Mediterranean plates, locally caught seafood
+- Billy Chow: coastal fine dining
+- Agave Rosa: modern Mexican taqueria with Asian twist
+- FRANC JRS: authentic Italian pizza
+- Eddie's Grub House: burgers, wings, dive-bar setting
+- La Stradina: European bistro, small plates, live music
+
+Coffee, bakeries and bars:
+- Love Street: cafe, gallery and surf shop in Kirra
+- Baked at Ancora: artisan sourdough and patisserie
+- Made Espresso Bar: specialty coffee, breakfast and brunch
+- The Bread Social: sourdough bakery-cafe, Tweed Heads
+- Kirra Beach Hotel: relaxed beachfront pub
+- Kirra Beach Surf Club and Coolangatta Surf Club: beachfront clubs
+
+Events:
+- Coolangatta Beachfront Market: second Sunday of each month
+- Cooly Rocks On: annual rock and roll festival, June
+
+## Schema / Machine-Readable
+Schema.org type: Apartment and LodgingBusiness
+Schema.org ID: https://kirrasuite.com/#apartment

@@ -44,11 +44,11 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Apartment",
+        "@type": ["Apartment", "LodgingBusiness"],
         "@id": "https://kirrasuite.com/#apartment",
         "name": "The Kirra Suite",
         "url": "https://kirrasuite.com/",
-        "description": "Designer 2-bedroom beachfront holiday apartment on Level 8 in Kirra, Gold Coast, with ocean views, a resort pool and gym, sleeping up to four guests.",
+        "description": "Designer 2-bedroom, 1-bathroom beachfront holiday apartment on Level 8, Marine Parade, Kirra (Coolangatta) QLD 4225, Gold Coast. Ocean views, ducted air conditioning, resort pool and gym, free secure parking, high-speed Wi-Fi. Sleeps up to 4 guests. Check-in 3pm, check-out 10am. Pets not permitted. Approximately 10 minutes from Gold Coast Airport (OOL).",
         "image": [
           "https://kirrasuite.com/assets/img/gallery/balcony-ocean-lg.jpg",
           "https://kirrasuite.com/assets/img/gallery/living-balcony-lg.jpg",
@@ -57,7 +57,12 @@
         "numberOfRooms": 2,
         "numberOfBedrooms": 2,
         "numberOfBathroomsTotal": 1,
+        "floorLevel": "8",
         "occupancy": { "@type": "QuantitativeValue", "maxValue": 4, "unitText": "guests" },
+        "checkInTime": "T15:00",
+        "checkOutTime": "T10:00",
+        "petsAllowed": false,
+        "tourBookingPage": "https://podpropertymanagement.com/properties/book/the_kirra_suite",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Marine Parade",
@@ -71,13 +76,17 @@
         "amenityFeature": [
           { "@type": "LocationFeatureSpecification", "name": "Ocean views", "value": true },
           { "@type": "LocationFeatureSpecification", "name": "Private balcony", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Ducted air conditioning", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "King bed (master bedroom)", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Queen sofa bed (second bedroom)", "value": true },
           { "@type": "LocationFeatureSpecification", "name": "Resort swimming pool", "value": true },
           { "@type": "LocationFeatureSpecification", "name": "Gym", "value": true },
           { "@type": "LocationFeatureSpecification", "name": "Free secure parking", "value": true },
           { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
           { "@type": "LocationFeatureSpecification", "name": "Fully equipped kitchen", "value": true },
           { "@type": "LocationFeatureSpecification", "name": "Washing machine and dryer", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Smart TVs", "value": true }
+          { "@type": "LocationFeatureSpecification", "name": "Google TV (Smart TVs)", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Linen and towels provided", "value": true }
         ],
         "sameAs": [
           "https://www.airbnb.com.au/rooms/1698490853391319597",
@@ -154,6 +163,7 @@
         <div class="split__body reveal">
           <p class="eyebrow">The Suite</p>
           <h2>Breezy coastal days, beautifully easy</h2>
+          <p class="property-lede">The Kirra Suite is a two-bedroom, one-bathroom beachfront holiday apartment on Level 8, Marine Parade, Kirra (Coolangatta) QLD 4225, directly across from Kirra Beach on the southern Gold Coast. It sleeps up to four guests, has ducted air conditioning throughout, and includes resort pool and gym access, one secure car space, and high-speed Wi-Fi. Gold Coast Airport (OOL) is approximately ten minutes by car.</p>
           <p>Set high on Level 8 of a prestigious beachfront building in Kirra, The Kirra Suite is a light-filled apartment dressed in brand-new designer furnishings that feel calm, breezy and effortless. The open-plan living, dining and kitchen spill out to a private balcony with sweeping ocean views over Kirra Beach, the perfect place for a slow morning coffee or a wine as the sun drops.</p>
           <p>The master king room and a second bedroom with a plush queen sofa bed share an adjoining bathroom, with a TV in each, an easy fit for couples, families or friends. A full kitchen with coffee machine, a concealed laundry, three Smart TVs and a welcome hamper on arrival mean it's all taken care of. Just unpack, kick off your shoes and settle in, whether it's a weekend away or a long, lazy stay.</p>
           <a href="#book" class="btn btn--dark">Book your stay</a>
