@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Generate the Kirra Suite favicon set from a simple coastal mark.
 
-Mark: deep-teal rounded tile, a terracotta "sun", and a cream sand band —
-echoing the site's palette. Writes an SVG (crisp at any size) plus PNG/ICO
+Mark: deep-teal rounded tile, a terracotta "sun", and a cream sand band that
+echoes the site's palette. Writes an SVG (crisp at any size) plus PNG/ICO
 rasters. Re-runnable; overwrites existing output.
 
 Usage: python3 tools/make_favicon.py   (needs Pillow)
@@ -67,7 +67,7 @@ def main() -> None:
     draw_mark(32, rounded=True).save(IMG / "favicon-32.png")
     draw_mark(192, rounded=True).save(IMG / "favicon-192.png")
     draw_mark(512, rounded=True).save(IMG / "favicon-512.png")
-    # Apple touch icons are masked by iOS — fill the square (no rounding/alpha).
+    # Apple touch icons are masked by iOS, so fill the square (no rounding/alpha).
     apple = draw_mark(180, rounded=False).convert("RGB")
     apple.save(IMG / "apple-touch-icon.png")
     # Multi-size .ico at the repo root for default browser requests.
