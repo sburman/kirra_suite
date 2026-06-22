@@ -284,6 +284,37 @@ a:hover { text-decoration: underline; }
 .site-footer a:hover { color: #fff; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.12); margin-top: 2.5rem; padding-top: 1.5rem; font-size: 0.82rem; opacity: 0.7; text-align: center; }
 
+/* ---------- Subpage hero ---------- */
+.page-hero { position: relative; min-height: 46vh; display: flex; align-items: flex-end; color: var(--white); background: var(--teal-deep); }
+.page-hero--short { min-height: 38vh; }
+.page-hero__media { position: absolute; inset: 0; overflow: hidden; }
+.page-hero__media img { width: 100%; height: 100%; object-fit: cover; }
+.page-hero__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,42,42,0.5) 0%, rgba(18,42,42,0.15) 42%, rgba(18,42,42,0.82) 100%); }
+.page-hero__inner { position: relative; z-index: 2; padding: 7rem 0 2.6rem; }
+.page-hero h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); max-width: 18ch; }
+.page-hero__tag { max-width: 48ch; opacity: 0.95; margin: 0.6rem 0 0; font-size: 1.05rem; }
+
+/* ---------- Prose / article ---------- */
+.prose { max-width: 72ch; }
+.prose h2 { margin-top: 2.6rem; }
+.prose h2:first-child { margin-top: 0; }
+.prose p { color: var(--ink); }
+.prose ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+.prose li { margin: 0.4rem 0; }
+.prose a:not(.btn) { font-weight: 600; }
+.prose__cta { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.8rem; }
+
+/* ---------- FAQ accordion (native details) ---------- */
+.faq { border-top: 1px solid var(--line); }
+.faq__item { border-bottom: 1px solid var(--line); }
+.faq__item summary { list-style: none; cursor: pointer; padding: 1.1rem 2.2rem 1.1rem 0; position: relative; font-family: var(--serif); font-size: 1.15rem; color: var(--ink); }
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after { content: "+"; position: absolute; right: 0.2rem; top: 50%; transform: translateY(-50%); font-size: 1.5rem; color: var(--terracotta); line-height: 1; }
+.faq__item[open] summary::after { content: "\2212"; }
+.faq__item summary:hover { color: var(--terracotta-dark); }
+.faq__a { padding: 0 0 1.2rem; }
+.faq__a p { margin: 0; color: var(--muted); }
+
 /* ---------- Reveal on scroll ---------- */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .reveal.is-visible { opacity: 1; transform: none; }

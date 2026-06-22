@@ -3,18 +3,25 @@
 Promotional brochure site for **The Kirra Suite** — a designer 2-bedroom beachfront
 apartment at Miles, Kirra Point, on the southern Gold Coast (QLD, Australia).
 
-The site is a single static page (plain HTML, CSS and vanilla JS — no build step,
-no dependencies) designed to be hosted on **GitHub Pages**.
+A static site (plain HTML, CSS and vanilla JS — no build step, no dependencies)
+hosted on **GitHub Pages** at the custom domain **https://kirrasuite.com.au**.
 
 ## Structure
 
 ```
-index.html              The whole page
-assets/css/styles.css   Styles
-assets/js/main.js        Gallery, lightbox, nav, scroll reveals
+index.html               Home (hero, suite, amenities, mosaic gallery, location, booking)
+guide.html               Evergreen Kirra & Coolangatta area guide
+faq.html                 FAQ (native <details> accordion + FAQPage schema)
+assets/css/styles.css    Styles
+assets/js/main.js        Gallery, lightbox, nav, scroll reveals (guarded per page)
 assets/img/gallery/      Web-optimized WebP (+ a few JPEG fallbacks)
-tools/optimize_images.py Regenerates assets/img from the high-res originals
-.nojekyll               Tells GitHub Pages to serve assets/ untouched
+assets/img/favicon*      Favicon set
+favicon.ico              Root favicon
+CNAME                    Custom domain for GitHub Pages
+robots.txt, sitemap.xml  Crawl directives
+.nojekyll                Tells GitHub Pages to serve assets/ untouched
+tools/optimize_images.py Regenerates assets/img/gallery from the high-res originals
+tools/make_favicon.py    Regenerates the favicon set
 ```
 
 The high-resolution source photos are **not** committed — they live in the
@@ -34,11 +41,31 @@ python3 -m http.server 8000
 
 ## Deploy (GitHub Pages)
 
-1. Commit and push to `main` on `github.com/sburman/kirra_suite`.
-2. In the repo: **Settings → Pages → Build and deployment**.
-3. Source: **Deploy from a branch**, Branch: **`main`**, Folder: **`/ (root)`**.
-4. The site publishes at `https://sburman.github.io/kirra_suite/`
-   (a custom domain can be added later under the same settings).
+Push to `main` on `github.com/sburman/kirra_suite`; Pages rebuilds automatically.
+Source is **Deploy from a branch → `main` → `/ (root)`**.
+
+## Custom domain (kirrasuite.com)
+
+`kirrasuite.com` is registered. The `CNAME` file sets it on GitHub Pages. To make
+it live:
+
+1. **DNS** at the registrar (where `kirrasuite.com` is registered):
+   - Apex `@` → four `A` records: `185.199.108.153`, `185.199.109.153`,
+     `185.199.110.153`, `185.199.111.153` (and optionally the matching `AAAA`:
+     `2606:50c0:8000::153`, `…8001::153`, `…8002::153`, `…8003::153`).
+   - `www` → `CNAME` to `sburman.github.io`.
+2. **Settings → Pages → Custom domain** is set automatically from the `CNAME`
+   file on deploy; once DNS resolves, tick **Enforce HTTPS**.
+3. **Google Search Console**: add the `kirrasuite.com` property, verify via DNS
+   `TXT`, and submit `https://kirrasuite.com/sitemap.xml`.
+
+## SEO notes
+
+- Absolute `canonical`, Open Graph and JSON-LD URLs all point at the custom domain.
+- `Apartment` schema on the home page; `FAQPage` on the FAQ; `BreadcrumbList` on
+  the guide. Do **not** add `aggregateRating` until there are real guest reviews.
+- Keep `guide.html`/`faq.html` date- and price-agnostic so they stay evergreen.
+- After adding pages, update `sitemap.xml`.
 
 ## Booking
 
