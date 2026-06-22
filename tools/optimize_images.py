@@ -48,6 +48,9 @@ MAPPING = {
     18: ("welcome-console", "Touches"),
     19: ("laundry", "Amenities"),
     21: ("building-lobby", "Building"),
+    22: ("building-exterior", "Building"),
+    23: ("aerial-beach-wide", "Location"),
+    24: ("aerial-beach", "Location"),
     25: ("pool-cabanas", "Resort"),
     26: ("pool", "Resort"),
 }

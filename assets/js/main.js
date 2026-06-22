@@ -34,6 +34,9 @@
       { slug: "pool",                   alt: "Resort-style pool and sun deck" },
       { slug: "pool-cabanas",           alt: "Pool deck with cabanas and ocean breezes" },
       { slug: "building-lobby",         alt: "Light-filled lobby with curved lounge seating" },
+      { slug: "building-exterior",      alt: "Beachfront tower above Kirra" },
+      { slug: "aerial-beach",           alt: "Aerial view of Kirra Beach and the suite's location" },
+      { slug: "aerial-beach-wide",      alt: "Wide aerial along Kirra Beach toward the hinterland" },
       { slug: "balcony-armchairs",      alt: "Balcony armchairs with a leafy Kirra outlook" }
     ];
 
