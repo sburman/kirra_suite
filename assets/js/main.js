@@ -89,22 +89,39 @@
       else if (e.key === "ArrowRight") step(1);
       else if (e.key === "ArrowLeft") step(-1);
     });
+
+    var touchStartX = 0;
+    lb.addEventListener("touchstart", function (e) { touchStartX = e.touches[0].clientX; }, { passive: true });
+    lb.addEventListener("touchend", function (e) {
+      var dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1);
+    }, { passive: true });
   }
 
   // ---- Mobile nav (all pages) ----
   var nav = document.getElementById("nav");
   var toggle = document.getElementById("navToggle");
   if (nav && toggle) {
+    var backdrop = document.createElement("div");
+    backdrop.id = "navBackdrop";
+    document.body.appendChild(backdrop);
+
+    var closeNav = function () {
+      nav.classList.remove("is-open");
+      backdrop.classList.remove("is-active");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open menu");
+    };
+
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("is-open");
+      backdrop.classList.toggle("is-active", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     });
+    backdrop.addEventListener("click", closeNav);
     nav.querySelectorAll("a").forEach(function (a) {
-      a.addEventListener("click", function () {
-        nav.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
-      });
+      a.addEventListener("click", closeNav);
     });
   }
 
