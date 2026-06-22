@@ -48,9 +48,6 @@ MAPPING = {
     18: ("welcome-console", "Touches"),
     19: ("laundry", "Amenities"),
     21: ("building-lobby", "Building"),
-    22: ("building-exterior", "Building"),
-    23: ("aerial-beach-wide", "Location"),
-    24: ("aerial-beach", "Location"),
     25: ("pool-cabanas", "Resort"),
     26: ("pool", "Resort"),
 }
@@ -61,7 +58,7 @@ SIZES = {
     "sm": (800, 80),    # gallery thumbnails / cards
 }
 # Images that also need a JPEG fallback (hero / social).
-JPEG_FALLBACK = {"aerial-beach", "balcony-ocean", "living-balcony"}
+JPEG_FALLBACK = {"balcony-ocean", "living-balcony"}
 
 
 def process(num: int, slug: str) -> list[str]:
