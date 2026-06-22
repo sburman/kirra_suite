@@ -303,7 +303,29 @@ a:hover { text-decoration: underline; }
 .prose li { margin: 0.4rem 0; }
 .prose a:not(.btn) { font-weight: 600; }
 .prose__cta { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.8rem; }
-.property-lede { font-size: 0.86rem; color: var(--muted); border-left: 3px solid var(--line); padding-left: 1rem; margin-bottom: 1.6rem; line-height: 1.6; }
+
+/* ---------- Host trust strip (booking section) ---------- */
+.host-trust {
+  background: var(--teal);
+  color: var(--white);
+  border-radius: var(--radius);
+  padding: 1.8rem 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.host-trust__stats { display: flex; gap: 0; flex-shrink: 0; flex-wrap: wrap; }
+.host-trust__stat {
+  text-align: center;
+  padding: 0 1.6rem;
+  border-left: 1px solid rgba(255,255,255,0.15);
+}
+.host-trust__stat:first-child { border-left: 0; padding-left: 0; }
+.host-trust__num { font-family: var(--serif); font-size: 2rem; display: block; line-height: 1; }
+.host-trust__label { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.72; margin-top: 0.4rem; display: block; }
+.host-trust__copy { flex: 1; min-width: 220px; font-size: 0.93rem; opacity: 0.88; margin: 0; }
 
 /* ---------- FAQ accordion (native details) ---------- */
 .faq { border-top: 1px solid var(--line); }
@@ -343,6 +365,8 @@ a:hover { text-decoration: underline; }
   .nav.is-open { transform: none; }
   .nav a:not(.btn) { color: var(--ink) !important; font-size: 1.05rem; }
   .nav-toggle { display: block; z-index: 201; }
+  .host-trust { gap: 1.6rem; padding: 1.4rem 1.6rem; }
+  .host-trust__stat { padding: 0 1rem; }
   .split, .location { grid-template-columns: 1fr; }
   .split--reverse .split__media { order: 0; }
   .booking-cards { grid-template-columns: 1fr; }
