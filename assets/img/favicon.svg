@@ -2,6 +2,6 @@
   <defs><clipPath id="r"><rect width="64" height="64" rx="14"/></clipPath></defs>
   <g clip-path="url(#r)">
     <rect width="64" height="64" fill="#1e3d72"/>
-    <path d="M0 43 q32 -10 64 0 V64 H0 Z" fill="#cc4e2c"/>
+    <path d="M0 44 C16 24 48 58 64 44 V64 H0 Z" fill="#cc4e2c"/>
   </g>
 </svg>
