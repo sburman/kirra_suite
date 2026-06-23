@@ -148,6 +148,25 @@
     document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-visible"); });
   }
 
+  // ---- Location map pin interactions (home page only) ----
+  var locationMap = document.getElementById("locationMap");
+  if (locationMap) {
+    var mapPinsEl = locationMap.querySelector(".map-pins");
+    document.querySelectorAll(".nearby li[data-location]").forEach(function (li) {
+      var pin = locationMap.querySelector('[data-pin="' + li.getAttribute("data-location") + '"]');
+      li.addEventListener("mouseenter", function () {
+        if (!pin) return;
+        mapPinsEl.classList.add("has-active");
+        pin.classList.add("is-active");
+      });
+      li.addEventListener("mouseleave", function () {
+        if (!pin) return;
+        mapPinsEl.classList.remove("has-active");
+        pin.classList.remove("is-active");
+      });
+    });
+  }
+
   // ---- Footer year (all pages) ----
   var yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
