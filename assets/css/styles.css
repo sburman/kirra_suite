@@ -257,6 +257,19 @@ a:hover { text-decoration: underline; }
 .nearby { list-style: none; padding: 0; margin: 0; }
 .nearby li { display: flex; justify-content: space-between; gap: 1rem; padding: 0.7rem 0; border-bottom: 1px solid var(--line); }
 .nearby li span:last-child { color: var(--muted); white-space: nowrap; }
+.location__guide-cta {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  margin-top: 1.4rem; padding: 1.2rem 1.4rem;
+  background: var(--teal); color: var(--white);
+  border-radius: var(--radius); text-decoration: none;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+.location__guide-cta:hover { background: var(--teal-deep); transform: translateY(-2px); text-decoration: none; }
+.location__guide-cta__body { display: flex; flex-direction: column; gap: 0.3rem; }
+.location__guide-cta__body strong { font-size: 0.95rem; font-weight: 600; }
+.location__guide-cta__body span { font-size: 0.82rem; opacity: 0.78; line-height: 1.4; }
+.location__guide-cta__arrow { font-size: 1.3rem; opacity: 0.7; flex-shrink: 0; transition: transform 0.2s ease; }
+.location__guide-cta:hover .location__guide-cta__arrow { transform: translateX(4px); opacity: 1; }
 
 /* ---------- Booking ---------- */
 .booking-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; align-items: stretch; }
