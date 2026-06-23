@@ -1,8 +1,8 @@
 /* The Kirra Suite brochure site styles */
 
 :root {
-  --teal: #1e3d72;          /* cobalt — right painting */
-  --teal-deep: #152e58;
+  --cobalt: #1e3d72;
+  --cobalt-deep: #152e58;
   --terracotta: #cc4e2c;    /* burnt orange-red — left painting */
   --terracotta-dark: #a83e22;
   --sand: #f2f1ee;
@@ -84,8 +84,8 @@ a:hover { text-decoration: underline; }
 .btn--primary:hover { background: var(--terracotta-dark); }
 .btn--ghost { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.6); }
 .btn--ghost:hover { background: rgba(255,255,255,0.12); }
-.btn--dark { background: var(--teal); color: var(--white); }
-.btn--dark:hover { background: var(--teal-deep); }
+.btn--dark { background: var(--cobalt); color: var(--white); }
+.btn--dark:hover { background: var(--cobalt-deep); }
 .btn--block { width: 100%; justify-content: center; }
 
 /* ---------- Header ---------- */
@@ -109,7 +109,7 @@ a:hover { text-decoration: underline; }
 .brand { display: flex; flex-direction: column; line-height: 1; color: var(--white); }
 .brand__name { font-family: var(--serif); font-size: 1.3rem; letter-spacing: 0.02em; }
 .brand__loc { font-size: 0.66rem; letter-spacing: 0.24em; text-transform: uppercase; opacity: 0.85; margin-top: 0.25rem; }
-.is-scrolled .brand { color: var(--teal); }
+.is-scrolled .brand { color: var(--cobalt); }
 
 .nav { display: flex; align-items: center; gap: 1.8rem; }
 .nav a {
@@ -123,7 +123,7 @@ a:hover { text-decoration: underline; }
 
 .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 0.4rem; }
 .nav-toggle span { display: block; width: 26px; height: 2px; background: var(--white); margin: 5px 0; transition: 0.3s; }
-.is-scrolled .nav-toggle span { background: var(--teal); }
+.is-scrolled .nav-toggle span { background: var(--cobalt); }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -132,7 +132,7 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: flex-end;
   color: var(--white);
-  background: var(--teal-deep);
+  background: var(--cobalt-deep);
 }
 .hero__media { position: absolute; inset: 0; overflow: hidden; }
 .hero__media img { width: 100%; height: 100%; object-fit: cover; }
@@ -148,7 +148,7 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Quick facts ---------- */
 .facts {
-  background: var(--teal);
+  background: var(--cobalt);
   color: var(--white);
 }
 .facts__grid {
@@ -296,7 +296,7 @@ a:hover { text-decoration: underline; }
 .bcard li::before { content: "✓"; color: var(--terracotta); font-weight: 700; }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--teal-deep); color: rgba(255,255,255,0.8); padding: 3.5rem 0 2rem; }
+.site-footer { background: var(--cobalt-deep); color: rgba(255,255,255,0.8); padding: 3.5rem 0 2rem; }
 .site-footer .container { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2rem; }
 .site-footer h4 { font-family: var(--serif); color: #fff; font-weight: 500; font-size: 1.1rem; margin: 0 0 0.8rem; }
 .site-footer a { color: rgba(255,255,255,0.8); }
@@ -304,7 +304,7 @@ a:hover { text-decoration: underline; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.12); margin-top: 2.5rem; padding-top: 1.5rem; font-size: 0.82rem; opacity: 0.7; text-align: center; }
 
 /* ---------- Subpage hero ---------- */
-.page-hero { position: relative; min-height: 46vh; display: flex; align-items: flex-end; color: var(--white); background: var(--teal-deep); }
+.page-hero { position: relative; min-height: 46vh; display: flex; align-items: flex-end; color: var(--white); background: var(--cobalt-deep); }
 .page-hero--short { min-height: 38vh; }
 .page-hero__media { position: absolute; inset: 0; overflow: hidden; }
 .page-hero__media img { width: 100%; height: 100%; object-fit: cover; }
@@ -325,7 +325,7 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Host trust strip (booking section) ---------- */
 .host-trust {
-  background: var(--teal);
+  background: var(--cobalt);
   color: var(--white);
   border-radius: var(--radius);
   padding: 1.8rem 2.4rem;
