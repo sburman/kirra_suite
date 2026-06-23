@@ -1,15 +1,15 @@
 /* The Kirra Suite brochure site styles */
 
 :root {
-  --teal: #1a3a3a;          /* brand (matches Miles/Kirra Point) */
-  --teal-deep: #122a2a;
-  --terracotta: #b5673f;    /* warm accent from the interior styling */
-  --terracotta-dark: #9a5532;
-  --sand: #f4efe8;
-  --cream: #fbf8f3;
-  --ink: #2b2a28;
-  --muted: #6f6a63;
-  --line: #e4ddd2;
+  --teal: #1e3d72;          /* cobalt — right painting */
+  --teal-deep: #152e58;
+  --terracotta: #cc4e2c;    /* burnt orange-red — left painting */
+  --terracotta-dark: #a83e22;
+  --sand: #f2f1ee;
+  --cream: #f8f8f6;
+  --ink: #242830;
+  --muted: #60656e;
+  --line: #dde0e4;
   --white: #ffffff;
 
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
@@ -18,8 +18,8 @@
   --maxw: 1200px;
   --gap: clamp(1rem, 3vw, 2rem);
   --radius: 4px;
-  --shadow: 0 12px 40px rgba(26, 58, 58, 0.12);
-  --shadow-sm: 0 4px 18px rgba(26, 58, 58, 0.08);
+  --shadow: 0 12px 40px rgba(30, 61, 114, 0.13);
+  --shadow-sm: 0 4px 18px rgba(30, 61, 114, 0.08);
 }
 
 *,
@@ -100,7 +100,7 @@ a:hover { text-decoration: underline; }
   transition: background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
 }
 .site-header.is-scrolled {
-  background: rgba(251, 248, 243, 0.96);
+  background: rgba(248, 248, 246, 0.96);
   backdrop-filter: blur(8px);
   box-shadow: var(--shadow-sm);
   padding-top: 0.7rem;
@@ -139,7 +139,7 @@ a:hover { text-decoration: underline; }
 .hero__media::after {
   content: "";
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(18,42,42,0.45) 0%, rgba(18,42,42,0.08) 35%, rgba(18,42,42,0.78) 100%);
+  background: linear-gradient(180deg, rgba(21,46,88,0.45) 0%, rgba(21,46,88,0.08) 35%, rgba(21,46,88,0.78) 100%);
 }
 .hero__inner { position: relative; z-index: 2; padding-bottom: clamp(3rem, 8vw, 6rem); padding-top: 8rem; }
 .hero h1 { font-size: clamp(2.6rem, 7vw, 5rem); max-width: 16ch; }
@@ -218,20 +218,20 @@ a:hover { text-decoration: underline; }
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
-  background: rgba(18, 42, 42, 0.55);
+  background: rgba(21, 46, 88, 0.55);
   color: var(--white);
   font-weight: 600;
   letter-spacing: 0.01em;
   transition: background 0.25s ease;
 }
-.mosaic__tile:hover .mosaic__more { background: rgba(18, 42, 42, 0.68); }
+.mosaic__tile:hover .mosaic__more { background: rgba(21, 46, 88, 0.68); }
 .mosaic__more .icon { font-size: 1.5rem; line-height: 1; }
 .mosaic__more .count { font-size: 0.82rem; opacity: 0.85; font-weight: 500; }
 
 /* ---------- Lightbox ---------- */
 .lightbox {
   position: fixed; inset: 0; z-index: 100;
-  background: rgba(18, 42, 42, 0.94);
+  background: rgba(21, 46, 88, 0.94);
   display: none;
   align-items: center;
   justify-content: center;
@@ -308,7 +308,7 @@ a:hover { text-decoration: underline; }
 .page-hero--short { min-height: 38vh; }
 .page-hero__media { position: absolute; inset: 0; overflow: hidden; }
 .page-hero__media img { width: 100%; height: 100%; object-fit: cover; }
-.page-hero__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,42,42,0.5) 0%, rgba(18,42,42,0.15) 42%, rgba(18,42,42,0.82) 100%); }
+.page-hero__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(21,46,88,0.5) 0%, rgba(21,46,88,0.15) 42%, rgba(21,46,88,0.82) 100%); }
 .page-hero__inner { position: relative; z-index: 2; padding: 7rem 0 2.6rem; }
 .page-hero h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); max-width: 18ch; }
 .page-hero__tag { max-width: 48ch; opacity: 0.95; margin: 0.6rem 0 0; font-size: 1.05rem; }
@@ -361,7 +361,7 @@ a:hover { text-decoration: underline; }
 #navBackdrop {
   position: fixed; inset: 0;
   z-index: 48;
-  background: rgba(18, 42, 42, 0.45);
+  background: rgba(21, 46, 88, 0.45);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;

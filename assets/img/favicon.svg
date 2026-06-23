@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="The Kirra Suite">
   <defs><clipPath id="r"><rect width="64" height="64" rx="14"/></clipPath></defs>
   <g clip-path="url(#r)">
-    <rect width="64" height="64" fill="#1a3a3a"/>
-    <circle cx="41" cy="25" r="11" fill="#b5673f"/>
-    <path d="M0 46 q16 -7 32 0 t32 0 V64 H0 Z" fill="#f4efe8"/>
+    <rect width="64" height="64" fill="#1e3d72"/>
+    <path d="M0 43 q32 -10 64 0 V64 H0 Z" fill="#cc4e2c"/>
   </g>
 </svg>
